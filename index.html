@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café Harmonic — Kávézó</title>
+<meta name="description" content="Café Harmonic — frissen pörkölt kávé, otthonos hangulat és kézműves sütemények a belváros szívében.">
+
+<link rel="icon" type="image/png" href="logo/cafe-harmony-11.png">
+<link rel="apple-touch-icon" href="logo/cafe-harmony-11.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&family=Pacifico&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">
+      <img class="logo-light" src="logo/cafe-harmony-09.png" alt="Café Harmonic">
+      <img class="logo-dark" src="logo/cafe-harmony-10.png" alt="Café Harmonic">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#bemutatkozas">Történetünk</a>
+      <a href="#kinalat">Kínálat</a>
+      <a href="#galeria">Hangulat</a>
+      <a href="#kapcsolat">Nyitvatartás</a>
+    </nav>
+    <a href="#kapcsolat" class="btn btn-small">Asztalfoglalás</a>
+    <button class="burger" id="burger" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-media">
+    <img src="képek/pexels-emmypaw-5461672.jpg" alt="Café Harmonic belső tere" loading="eager">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <img class="hero-logo" src="logo/cafe-harmony-09.png" alt="Café Harmonic logó">
+    <span class="kicker" data-reveal>Specialty kávézó a belváros szívében</span>
+    <h1 data-reveal>Ahol minden kortyban<br><em>harmónia</em> lakik</h1>
+    <p class="lede" data-reveal>Frissen pörkölt kávé, meleg fények és percek, amikért érdemes megállni. Gyere be, telepedj le, és élvezd a csendet a városi zsongásban.</p>
+    <div class="hero-actions" data-reveal>
+      <a href="#kapcsolat" class="btn btn-light">Asztalfoglalás</a>
+      <a href="#kinalat" class="btn btn-ghost">Kínálatunk megtekintése</a>
+    </div>
+  </div>
+  <a href="#bemutatkozas" class="scroll-cue" aria-label="Görgetés lejjebb"><span></span></a>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="bemutatkozas">
+  <div class="about-media" data-reveal>
+    <img src="képek/pexels-gulkiz-tuzen-dagdas-273405070-38065463.jpg" alt="Kávé kilátással a tengerre">
+    <div class="about-media-badge">
+      <img src="logo/cafe-harmony-11.png" alt="">
+    </div>
+  </div>
+  <div class="about-text">
+    <span class="kicker kicker-dark" data-reveal>Történetünk</span>
+    <h2 data-reveal>Nem csak kávét főzünk —<br>hangulatot teremtünk</h2>
+    <p data-reveal>A Café Harmonic ott kezdődött, ahol a jó kávé és a nyugalom találkozik. Hiszünk abban, hogy egy csésze kávé többet is jelenthet egy pörkölt babnál: egy pillanatnyi megállást a napban, egy beszélgetést, egy új kezdetet.</p>
+    <p data-reveal>Gondosan válogatott szemeket használunk, amiket barista csapatunk minden nap frissen főz meg — legyen szó egy gyors reggeli eszpresszóról vagy egy hosszú, délutáni beszélgetésről egy pohár szűrt kávé mellett.</p>
+    <blockquote data-reveal>„A harmónia nem csend — hanem az a pillanat, amikor minden a helyén van.”</blockquote>
+    <a href="#kinalat" class="link-arrow" data-reveal>Fedezd fel a kínálatunkat →</a>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="features-inner">
+    <div class="feature" data-reveal>
+      <div class="feature-icon">☕</div>
+      <h3>Válogatott kávé</h3>
+      <p>Gondosan kiválasztott, frissen pörkölt szemek — minden csészében ott a törődés.</p>
+    </div>
+    <div class="feature" data-reveal>
+      <div class="feature-icon">✦</div>
+      <h3>Otthonos hangulat</h3>
+      <p>Meleg fények, puha zenék és egy hely, ahol tényleg megáll az idő egy kicsit.</p>
+    </div>
+    <div class="feature" data-reveal>
+      <div class="feature-icon">✧</div>
+      <h3>Kézműves sütemények</h3>
+      <p>Naponta frissen sült péksütemények és desszertek, amik illenek a kávéhoz.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY BANNER -->
+<section class="banner" id="galeria">
+  <img src="képek/pexels-tugba-587672959-17574129.jpg" alt="Kávé napkeltekor a dombok felett">
+  <div class="banner-overlay"></div>
+  <div class="banner-content" data-reveal>
+    <p class="banner-quote">„Minden reggel egy új történet kezdődik —<br>egy csésze kávéval a kezünkben.”</p>
+  </div>
+</section>
+
+<!-- MENU TEASER -->
+<section class="menu" id="kinalat">
+  <span class="kicker kicker-dark center" data-reveal>Kínálatunk</span>
+  <h2 class="center" data-reveal>Népszerű választásaink</h2>
+  <div class="menu-grid">
+    <div class="menu-item" data-reveal>
+      <div class="menu-item-top">
+        <h4>Espresso</h4>
+        <span class="dots"></span>
+        <span class="price">790 Ft</span>
+      </div>
+      <p>Intenzív, tömény, tökéletes indítás a napnak.</p>
+    </div>
+    <div class="menu-item" data-reveal>
+      <div class="menu-item-top">
+        <h4>Cappuccino</h4>
+        <span class="dots"></span>
+        <span class="price">990 Ft</span>
+      </div>
+      <p>Selymes tejhab, gazdag kávéalappal.</p>
+    </div>
+    <div class="menu-item" data-reveal>
+      <div class="menu-item-top">
+        <h4>Flat White</h4>
+        <span class="dots"></span>
+        <span class="price">1050 Ft</span>
+      </div>
+      <p>Sűrű, krémes, kávédominanciájú kedvenc.</p>
+    </div>
+    <div class="menu-item" data-reveal>
+      <div class="menu-item-top">
+        <h4>Filter kávé</h4>
+        <span class="dots"></span>
+        <span class="price">890 Ft</span>
+      </div>
+      <p>Tiszta, gyümölcsös jegyek, lassan kortyolva.</p>
+    </div>
+  </div>
+  <p class="menu-note" data-reveal>* Az árak és tételek tájékoztató jellegűek — a teljes étlapért keress minket helyben.</p>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <img class="cta-bg" src="képek/pexels-emmypaw-5461672.jpg" alt="">
+  <div class="cta-overlay"></div>
+  <div class="cta-content" data-reveal>
+    <img class="cta-logo" src="logo/cafe-harmony-09.png" alt="Café Harmonic">
+    <h2>Gyere be, foglalj asztalt,<br>és élvezd a harmóniát</h2>
+    <a href="#kapcsolat" class="btn btn-light">Asztalfoglalás</a>
+  </div>
+</section>
+
+<!-- CONTACT / HOURS -->
+<section class="contact" id="kapcsolat">
+  <div class="contact-inner">
+    <div class="contact-block" data-reveal>
+      <span class="kicker kicker-dark">Nyitvatartás</span>
+      <h2>Mikor találsz meg minket</h2>
+      <table class="hours">
+        <tr><td>Hétfő – Péntek</td><td>7:30 – 18:00</td></tr>
+        <tr><td>Szombat</td><td>8:00 – 19:00</td></tr>
+        <tr><td>Vasárnap</td><td>9:00 – 17:00</td></tr>
+      </table>
+    </div>
+    <div class="contact-block" data-reveal>
+      <span class="kicker kicker-dark">Elérhetőség</span>
+      <h2>Keress minket bátran</h2>
+      <ul class="contact-list">
+        <li><strong>Cím</strong><span>Fő utca 12., 1052 Budapest</span></li>
+        <li><strong>Telefon</strong><span>+36 1 234 5678</span></li>
+        <li><strong>E-mail</strong><span>hello@cafeharmonic.hu</span></li>
+      </ul>
+      <a href="#top" class="link-arrow">Vissza a tetejére ↑</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <img src="logo/cafe-harmony-09.png" alt="Café Harmonic" class="footer-logo">
+    <nav class="footer-links">
+      <a href="#bemutatkozas">Történetünk</a>
+      <a href="#kinalat">Kínálat</a>
+      <a href="#galeria">Hangulat</a>
+      <a href="#kapcsolat">Nyitvatartás</a>
+    </nav>
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram">IG</a>
+      <a href="#" aria-label="Facebook">FB</a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 Café Harmonic. Minden jog fenntartva.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
