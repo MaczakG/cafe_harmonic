@@ -595,6 +595,14 @@ p{ color: var(--ink-soft); }
   }
   .nav .btn-small{ display:none; }
   .burger{ display:flex; }
+  .food-grid{ grid-template-columns: 1fr; gap: 1.2rem; }
+  .food-card{ aspect-ratio: 4/3; }
+  .food-card-dark{
+    grid-column: span 1;
+    aspect-ratio: 4/3;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .cup-badge{ width: 84px; height: 84px; bottom: 1.6rem; right: 1.2rem; }
   .cup-badge-inner{ font-size: .58rem; }
   .cup-badge-inner strong{ font-size: .68rem; }
