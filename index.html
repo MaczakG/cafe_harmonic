@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cafe Harmonic Budapest</title>
-<meta name="description" content="Cafe Harmonic Budapest — a cozy coffee spot in the heart of Budapest. Good coffee. Good vibes. Egy hangulatos kávézó Budapest szívében.">
+<meta name="description" content="Cafe Harmonic Budapest — good coffee, good thoughts. Specialty kávé, WriteOnCup és egy nyugodt sarok Budapest szívében.">
 
 <link rel="icon" type="image/png" href="logo/cafe-harmony-11.png">
 <link rel="apple-touch-icon" href="logo/cafe-harmony-11.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Poppins:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -25,10 +25,11 @@
       <img class="logo-dark" src="logo/cafe-harmony-10.png" alt="Cafe Harmonic Budapest">
     </a>
     <nav class="nav-links" id="navLinks">
-      <a href="#about">About <span>/ Rólunk</span></a>
+      <a href="#about">About</a>
+      <a href="#menu">Coffee</a>
       <a href="#writeoncup">WriteOnCup</a>
-      <a href="#menu">Menu <span>/ Menü</span></a>
-      <a href="#contact">Contact <span>/ Kapcsolat</span></a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Visit</a>
     </nav>
     <a href="#contact" class="btn btn-small">Get Directions</a>
     <button class="burger" id="burger" aria-label="Menü">
@@ -37,7 +38,7 @@
   </div>
 </header>
 
-<!-- HERO -->
+<!-- 1. HERO -->
 <section class="hero" id="top">
   <div class="hero-slides">
     <div class="hero-slide"><img src="képek/pexels-coffee-shop-interior-6612572.jpg" alt="Cafe Harmonic belső tere" loading="eager"></div>
@@ -55,23 +56,27 @@
   </a>
 
   <div class="hero-content">
-    <span class="hero-kicker" data-reveal>Budapest</span>
-    <h1 data-reveal>CAFE HARMONIC</h1>
-    <p class="tagline" data-reveal><strong>Good coffee. Good vibes.</strong><br>Jó kávé. Jó hangulat.</p>
+    <span class="hero-kicker" data-reveal>Specialty Coffee · Budapest</span>
+    <h1 data-reveal>GOOD COFFEE.<br>GOOD THOUGHTS.</h1>
+    <p class="tagline" data-reveal><strong>A cozy coffee spot to slow down, sip well, and feel good.</strong><br>Egy hangulatos hely, ahol lelassulhatsz, jót kortyolhatsz, és jól érezheted magad.</p>
     <div class="hero-actions" data-reveal>
       <a href="#menu" class="btn btn-primary">View Menu</a>
-      <a href="#contact" class="btn btn-outline">Get Directions</a>
+      <a href="#contact" class="btn btn-link-light">Find Us</a>
     </div>
   </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Görgetés lejjebb">
+    <svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 1l7 7 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
 </section>
 
-<!-- ABOUT -->
+<!-- 2. ABOUT -->
 <section class="about" id="about">
   <div class="about-media" data-reveal>
     <img src="képek/pexels-barista-4349954.jpg" alt="Barista gondosan elkészíti a kávét">
   </div>
   <div class="about-text">
-    <span class="eyebrow" data-reveal>About Us <span class="eyebrow-hu">/ Rólunk</span></span>
+    <span class="eyebrow eyebrow-dark" data-reveal>About Cafe Harmonic <span class="eyebrow-hu">/ Rólunk</span></span>
     <h2 data-reveal>A cozy coffee spot<br>in the heart of Budapest.</h2>
     <p class="hu" data-reveal>Egy hangulatos kávézó Budapest szívében.</p>
     <p class="bi" data-reveal>
@@ -81,20 +86,77 @@
   </div>
 </section>
 
-<!-- WRITEONCUP -->
+<!-- 3. COFFEE MENU -->
+<section class="coffee" id="menu">
+  <div class="coffee-inner">
+    <div class="coffee-text">
+      <span class="eyebrow" data-reveal>Our Coffee <span class="eyebrow-hu">/ Kávéink</span></span>
+      <h2 data-reveal>Our coffee,<br>your choice.</h2>
+      <p class="hu" data-reveal>A te választásod.</p>
+      <div class="menu-list">
+        <div class="menu-row" data-reveal><span class="m-name">Espresso</span><span class="m-price">950 Ft</span></div>
+        <div class="menu-row" data-reveal><span class="m-name">Ristretto</span><span class="m-price">950 Ft</span></div>
+        <div class="menu-row" data-reveal><span class="m-name">Cappuccino</span><span class="m-price">1 150 Ft</span></div>
+        <div class="menu-row" data-reveal><span class="m-name">Americano</span><span class="m-price">1 100 Ft</span></div>
+        <div class="menu-row" data-reveal><span class="m-name">Latte Macchiato</span><span class="m-price">1 250 Ft</span></div>
+        <div class="menu-row" data-reveal><span class="m-name">Caffè Latte</span><span class="m-price">1 200 Ft</span></div>
+        <div class="menu-row" data-reveal><span class="m-name">Cortado</span><span class="m-price">1 050 Ft</span></div>
+        <div class="menu-row" data-reveal><span class="m-name">Flat White</span><span class="m-price">1 250 Ft</span></div>
+      </div>
+      <p class="menu-note" data-reveal>Prices are indicative. / Az árak tájékoztató jellegűek.</p>
+    </div>
+    <div class="coffee-media" data-reveal>
+      <img src="képek/pexels-latte-art-2226091.jpg" alt="Cappuccino szív alakú latte arttal">
+      <img class="coffee-media-inset" src="képek/pexels-croissant-coffee-32413997.jpg" alt="Friss croissant kávéval">
+      <blockquote class="floating-quote">
+        <p>“Good coffee is a little joy you can hold in your hands.”</p>
+        <cite>A jó kávé egy apró öröm, amit a kezedben tarthatsz.</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- 4. MORE THAN COFFEE -->
+<section class="food" id="food">
+  <span class="eyebrow eyebrow-dark center" data-reveal>More Than Coffee <span class="eyebrow-hu">/ Nem csak kávé</span></span>
+  <h2 class="center" data-reveal>Coffee + something good.</h2>
+  <p class="hu center" data-reveal>Kávé és még valami jó.</p>
+  <div class="food-grid">
+    <div class="food-card" data-reveal>
+      <span class="food-icon">☕</span>
+      <strong>Cappuccino</strong>
+      <span class="hu">Cappuccino</span>
+    </div>
+    <div class="food-card" data-reveal>
+      <span class="food-icon">🥐</span>
+      <strong>Croissant</strong>
+      <span class="hu">Croissant</span>
+    </div>
+    <div class="food-card" data-reveal>
+      <span class="food-icon">🍰</span>
+      <strong>Cake</strong>
+      <span class="hu">Sütemény</span>
+    </div>
+    <div class="food-card" data-reveal>
+      <span class="food-icon">🥪</span>
+      <strong>Snack</strong>
+      <span class="hu">Harapnivaló</span>
+    </div>
+  </div>
+</section>
+
+<!-- 5. WRITEONCUP -->
 <section class="writeoncup" id="writeoncup">
  <div class="writeoncup-inner">
   <div class="woc-media" data-reveal>
     <img src="képek/pexels-takeaway-cup-6612350.jpg" alt="Üres elviteles pohár, készen egy kézzel írt üzenetre">
-    <span class="woc-sticker">
-      WriteOnCup
-    </span>
+    <span class="woc-sticker">WriteOnCup</span>
     <p class="woc-placeholder-note">Illusztráció — a végleges, egyedi WriteOnCup fotó és matrica-grafika elkészültéig.</p>
   </div>
   <div class="woc-text">
-    <span class="eyebrow" data-reveal>WriteOnCup</span>
-    <h2 data-reveal>Leave a little<br>positivity.</h2>
-    <p class="hu" data-reveal>Hagyj egy kis pozitivitást magad után.</p>
+    <span class="eyebrow eyebrow-dark" data-reveal>WriteOnCup</span>
+    <h2 data-reveal>Write something good.<br>Leave it for someone else.</h2>
+    <p class="hu" data-reveal>Írj egy pozitív üzenetet. Mi pedig eljuttatjuk valaki másnak.</p>
     <p class="bi" data-reveal>
       <strong>Write a short, kind message on a sticker — it might end up on a stranger's cup, brightening their day.</strong><br>
       <span class="hu">Írj egy rövid, kedves üzenetet egy matricára — lehet, hogy egy idegen poharára kerül, és felderíti a napját.</span>
@@ -104,33 +166,62 @@
  </div>
 </section>
 
-<!-- MENU -->
-<section class="menu" id="menu">
-  <div class="menu-list-col">
-    <span class="eyebrow" data-reveal>Menu <span class="eyebrow-hu">/ Menü</span></span>
-    <h2 data-reveal>What would you<br>like today?</h2>
-    <p class="hu" data-reveal>Mit kérsz ma?</p>
-    <div class="menu-list">
-      <div class="menu-row" data-reveal><span class="m-name">Espresso</span><span class="m-price">950 Ft</span></div>
-      <div class="menu-row" data-reveal><span class="m-name">Ristretto</span><span class="m-price">950 Ft</span></div>
-      <div class="menu-row" data-reveal><span class="m-name">Cappuccino</span><span class="m-price">1 150 Ft</span></div>
-      <div class="menu-row" data-reveal><span class="m-name">Americano</span><span class="m-price">1 100 Ft</span></div>
-      <div class="menu-row" data-reveal><span class="m-name">Latte Macchiato</span><span class="m-price">1 250 Ft</span></div>
-      <div class="menu-row" data-reveal><span class="m-name">Caffè Latte</span><span class="m-price">1 200 Ft</span></div>
-      <div class="menu-row" data-reveal><span class="m-name">Cortado</span><span class="m-price">1 050 Ft</span></div>
-      <div class="menu-row" data-reveal><span class="m-name">Flat White</span><span class="m-price">1 250 Ft</span></div>
+<!-- 6. WRITE A MESSAGE -->
+<section class="message" id="message">
+  <span class="eyebrow eyebrow-dark center" data-reveal>Write A Message</span>
+  <h2 class="center" data-reveal>Your words might<br>make someone's day.</h2>
+  <p class="hu center" data-reveal>A szavaid felderíthetik valaki napját.</p>
+
+  <div class="message-board" data-reveal>
+    <div class="message-cup">
+      <img src="képek/pexels-takeaway-cup-6612350.jpg" alt="WriteOnCup pohár">
     </div>
-    <p class="menu-note" data-reveal>Árak tájékoztató jellegűek. / Prices are indicative.</p>
+    <span class="note note-1">Have a beautiful day!</span>
+    <span class="note note-2">You are doing great!</span>
+    <span class="note note-3">Enjoy Budapest!</span>
+    <span class="note note-4">Smile today!</span>
+    <span class="note note-5">You've got this!</span>
+    <span class="note note-6">Good vibes only!</span>
   </div>
-  <div class="menu-media" data-reveal>
-    <img src="képek/pexels-latte-art-2226091.jpg" alt="Cappuccino szív alakú latte arttal">
-    <img class="menu-media-inset" src="képek/pexels-croissant-coffee-32413997.jpg" alt="Friss croissant kávéval">
+
+  <a href="https://writeoncup.hu" target="_blank" rel="noopener" class="btn btn-solid center-btn" data-reveal>Write On A Cup</a>
+</section>
+
+<!-- 7. GALLERY -->
+<section class="gallery" id="gallery">
+  <span class="eyebrow eyebrow-dark center" data-reveal>Cafe Moments <span class="eyebrow-hu">/ Pillanatok</span></span>
+  <h2 class="center" data-reveal>A little place with<br>a lot of good energy.</h2>
+  <div class="gallery-grid">
+    <div class="g-item g-large" data-reveal><img src="képek/pexels-coffee-shop-interior-6612572.jpg" alt="Belső tér" style="object-position:center 30%"></div>
+    <div class="g-item g-a" data-reveal><img src="képek/pexels-latte-art-2226091.jpg" alt="Latte art"></div>
+    <div class="g-item g-b" data-reveal><img src="képek/pexels-barista-4349954.jpg" alt="Barista"></div>
+    <div class="g-item g-tall" data-reveal><img src="képek/pexels-takeaway-cup-6612350.jpg" alt="WriteOnCup pohár"></div>
+    <div class="g-item g-c" data-reveal><img src="képek/pexels-croissant-coffee-32413997.jpg" alt="Croissant"></div>
+    <div class="g-item g-d" data-reveal><img src="képek/pexels-barista-portafilter-9052268.jpg" alt="Barista részlet"></div>
+    <div class="g-item g-wide" data-reveal><img src="képek/pexels-gulkiz-tuzen-dagdas-273405070-38065463.jpg" alt="Kávé kilátással"></div>
+    <div class="g-item g-e" data-reveal><img src="képek/pexels-tugba-587672959-17574129.jpg" alt="Kávé napkeltekor"></div>
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- 8. BUDAPEST -->
+<section class="budapest">
+  <img src="képek/pexels-gulkiz-tuzen-dagdas-273405070-38065463.jpg" alt="Kávé kilátással Budapestre">
+  <div class="budapest-overlay"></div>
+  <div class="budapest-content">
+    <span class="eyebrow" data-reveal>Budapest</span>
+    <h2 data-reveal>Coffee in the<br>heart of Budapest.</h2>
+    <p class="hu" data-reveal>Kávé Budapest szívében.</p>
+    <p class="bi" data-reveal>
+      <strong>Easy to find, easy to love — just a short walk from the city's best-known corners.</strong><br>
+      <span class="hu">Könnyen megtalálható, könnyen megszerethető — pár lépésre a város ismert pontjaitól.</span>
+    </p>
+    <a class="link-arrow link-arrow-light" href="https://www.google.com/maps/search/?api=1&query=F%C5%91+utca+12.%2C+1052+Budapest" target="_blank" rel="noopener">Get Directions →</a>
+  </div>
+</section>
+
+<!-- 9. VISIT US -->
 <section class="contact" id="contact">
-  <span class="eyebrow center" data-reveal>Contact <span class="eyebrow-hu">/ Kapcsolat</span></span>
+  <span class="eyebrow eyebrow-dark center" data-reveal>Visit Us <span class="eyebrow-hu">/ Látogass el</span></span>
   <h2 class="center" data-reveal>Come say hi.</h2>
   <p class="hu center" data-reveal>Gyere, köszönj be!</p>
 
@@ -152,10 +243,10 @@
       <div class="contact-block">
         <span class="contact-label">Social</span>
         <div class="social-row">
-          <a href="#" target="_blank" rel="noopener">Facebook</a>
-          <a href="#" target="_blank" rel="noopener">Instagram</a>
-          <a href="#" target="_blank" rel="noopener">TikTok</a>
-          <a href="#" target="_blank" rel="noopener">YouTube</a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.4"/><path d="M13.5 8.5h1.5V6h-1.7c-1.7 0-2.8 1.1-2.8 2.9V10H9v2.4h1.5V18h2.4v-5.6H14.6L15 10h-2.1V9c0-.4.2-.5.6-.5Z" fill="currentColor"/></svg></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="3.4" stroke="currentColor" stroke-width="1.4"/><circle cx="16.2" cy="7.8" r="1" fill="currentColor"/></svg></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none"><path d="M14 4v9.8a2.6 2.6 0 1 1-2.2-2.57" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M14 4c.3 2 1.8 3.5 3.7 3.7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="6.5" width="17" height="11" rx="3.2" stroke="currentColor" stroke-width="1.4"/><path d="M10.5 9.7v4.6l4-2.3-4-2.3Z" fill="currentColor"/></svg></a>
         </div>
       </div>
     </div>
@@ -169,26 +260,45 @@
   </div>
 </section>
 
+<!-- 10. FINAL CTA -->
+<section class="final-cta">
+  <h2>GOOD COFFEE.<br>GOOD THOUGHTS.<br><em>See you at Cafe Harmonic.</em></h2>
+  <p class="hu">Jó kávé. Jó gondolatok. Találkozzunk a Cafe Harmonicban.</p>
+  <div class="final-cta-actions">
+    <a href="#menu" class="btn btn-primary">View Menu</a>
+    <a href="https://www.google.com/maps/search/?api=1&query=F%C5%91+utca+12.%2C+1052+Budapest" target="_blank" rel="noopener" class="btn btn-outline">Get Directions</a>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">
       <img src="logo/cafe-harmony-09.png" alt="Cafe Harmonic Budapest" class="footer-logo">
-      <div>
-        <strong>CAFE HARMONIC BUDAPEST</strong>
-        <span>Fő utca 12., 1052 Budapest</span>
+      <strong>Cafe Harmonic Budapest</strong>
+      <span>Fő utca 12., 1052 Budapest</span>
+    </div>
+    <div class="footer-col">
+      <span class="footer-col-title">Explore</span>
+      <a href="#about">About</a>
+      <a href="#menu">Coffee</a>
+      <a href="#writeoncup">WriteOnCup</a>
+      <a href="#gallery">Gallery</a>
+    </div>
+    <div class="footer-col">
+      <span class="footer-col-title">Visit</span>
+      <a href="#contact">Contact</a>
+      <a href="#contact">Opening Hours</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=F%C5%91+utca+12.%2C+1052+Budapest" target="_blank" rel="noopener">Get Directions</a>
+    </div>
+    <div class="footer-col footer-social-col">
+      <span class="footer-col-title">Follow</span>
+      <div class="footer-social">
+        <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.4"/><path d="M13.5 8.5h1.5V6h-1.7c-1.7 0-2.8 1.1-2.8 2.9V10H9v2.4h1.5V18h2.4v-5.6H14.6L15 10h-2.1V9c0-.4.2-.5.6-.5Z" fill="currentColor"/></svg></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="3.4" stroke="currentColor" stroke-width="1.4"/><circle cx="16.2" cy="7.8" r="1" fill="currentColor"/></svg></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none"><path d="M14 4v9.8a2.6 2.6 0 1 1-2.2-2.57" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M14 4c.3 2 1.8 3.5 3.7 3.7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="6.5" width="17" height="11" rx="3.2" stroke="currentColor" stroke-width="1.4"/><path d="M10.5 9.7v4.6l4-2.3-4-2.3Z" fill="currentColor"/></svg></a>
       </div>
-    </div>
-    <div class="footer-mid">
-      <span class="contact-label">Opening Hours <span class="eyebrow-hu">/ Nyitvatartás</span></span>
-      <span>Mon–Fri 7:30–18:00 · Sat 8:00–19:00 · Sun 9:00–17:00</span>
-      <a href="https://writeoncup.hu" target="_blank" rel="noopener" class="footer-woc">WriteOnCup →</a>
-    </div>
-    <div class="footer-social">
-      <a href="#" target="_blank" rel="noopener">Facebook</a>
-      <a href="#" target="_blank" rel="noopener">Instagram</a>
-      <a href="#" target="_blank" rel="noopener">TikTok</a>
-      <a href="#" target="_blank" rel="noopener">YouTube</a>
     </div>
   </div>
   <p class="footer-copy">© 2026 Cafe Harmonic Budapest. All rights reserved. / Minden jog fenntartva.</p>
