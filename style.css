@@ -172,15 +172,13 @@ p{ color: var(--ink-soft); }
   padding: .8rem 0;
 }
 .nav-inner{
-  max-width: var(--container);
-  margin: 0 auto;
-  padding: 0 1.6rem;
+  padding: 0 3.5rem;
   display: flex;
   align-items: center;
   gap: 2rem;
 }
-.nav-brand img{ height: 40px; width: auto; transition: height .3s ease; }
-.nav.scrolled .nav-brand img{ height: 34px; }
+.nav-brand img{ height: 58px; width: auto; transition: height .3s ease; }
+.nav.scrolled .nav-brand img{ height: 48px; }
 .nav-brand{ position: relative; display:block; }
 .nav-brand .logo-dark{ position:absolute; top:0; left:0; opacity: 0; }
 .nav.scrolled .nav-brand .logo-light{ opacity: 0; }
@@ -213,7 +211,7 @@ p{ color: var(--ink-soft); }
   position: relative;
   min-height: 92vh;
   display: grid;
-  grid-template-columns: .92fr 1.08fr;
+  grid-template-columns: 1fr 1fr;
   background: var(--espresso);
 }
 .hero-panel{
@@ -479,6 +477,8 @@ p{ color: var(--ink-soft); }
 .budapest-content h2{ color: var(--white); font-size: clamp(1.9rem, 4vw, 2.8rem); margin-bottom: .6rem; }
 .budapest-content > p.hu{ color: rgba(247,241,230,.65); margin-bottom: 1.4rem; }
 .budapest-content .bi{ max-width: 50ch; }
+.budapest-content .bi strong{ color: var(--white); }
+.budapest-content .bi .hu{ color: rgba(247,241,230,.65); }
 
 /* ================= 9. VISIT US ================= */
 .contact{ max-width: var(--container); margin: 0 auto; padding: 6.5rem 1.6rem; }
@@ -557,6 +557,7 @@ p{ color: var(--ink-soft); }
 @media (max-width: 980px){
   .hero{ grid-template-columns: 1fr; min-height: 0; }
   .hero-panel{ padding: 7rem 1.8rem 3.5rem; }
+  .nav-inner{ padding: 0 1.8rem; }
   .hero-media{ height: 62vh; }
   .about, .coffee-inner, .writeoncup-inner{ grid-template-columns: 1fr; gap: 2.8rem; }
   .woc-text{ order: -1; }
