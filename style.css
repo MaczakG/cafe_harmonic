@@ -260,7 +260,7 @@ p{ color: var(--ink-soft); }
 }
 
 .cup-badge{
-  position: absolute; top: 2.4rem; right: 2.2rem; z-index: 3;
+  position: absolute; bottom: 3.5rem; right: 2.2rem; z-index: 3;
   width: 108px; height: 108px; border-radius: 50%;
   background: var(--white);
   border: 2px dashed var(--coffee);
@@ -273,21 +273,6 @@ p{ color: var(--ink-soft); }
 .cup-badge-inner{ display:flex; flex-direction: column; align-items:center; text-align:center; color: var(--coffee-dark); font-size: .68rem; line-height: 1.25; text-transform: uppercase; letter-spacing: .04em; }
 .cup-badge-inner strong{ font-size: .82rem; font-weight: 700; }
 .cup-badge-sub{ margin-top: .3rem; font-size: .58rem; color: var(--coffee); letter-spacing: .08em; }
-
-.scroll-cue{
-  position: absolute;
-  bottom: -22px; left: 2.4rem;
-  z-index: 4;
-  width: 44px; height: 44px;
-  border-radius: 50%;
-  background: var(--cream);
-  border: 1px solid rgba(31,21,14,.1);
-  display:flex; align-items:center; justify-content:center;
-  color: var(--espresso);
-  box-shadow: 0 10px 22px rgba(31,21,14,.25);
-  transition: background .25s ease, transform .25s ease;
-}
-.scroll-cue:hover{ background: var(--white); transform: translateY(2px); }
 
 /* ================= 2. ABOUT ================= */
 .about{
@@ -602,7 +587,7 @@ p{ color: var(--ink-soft); }
   .nav-links.open a{ color: var(--ink); text-shadow: none; }
   .nav .btn-small{ display:none; }
   .burger{ display:flex; }
-  .cup-badge{ width: 84px; height: 84px; top: 1.4rem; right: 1.2rem; }
+  .cup-badge{ width: 84px; height: 84px; bottom: 1.6rem; right: 1.2rem; }
   .cup-badge-inner{ font-size: .58rem; }
   .cup-badge-inner strong{ font-size: .68rem; }
   .gallery-grid{ grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
