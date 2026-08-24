@@ -622,7 +622,13 @@ p{ color: var(--ink-soft); }
   .hero-actions{ flex-direction: column; align-items: center; width: 100%; }
   .hero-actions .btn-primary{ width:100%; text-align:center; }
   .woc-sticker{ width: 78px; height: 78px; font-size: .72rem; left: -.8rem; }
-  .message-board{ height: 560px; }
+  .message-board{ height: 400px; max-width: 380px; }
+  .message-cup{ width: 130px; height: 130px; }
+  .note{ font-size: 1.1rem; padding: .55rem .9rem; }
+  .note-1{ left: 0; }
+  .note-2{ right: 0; }
+  .note-5{ left: 4%; }
+  .note-6{ right: 4%; }
   .final-cta-actions{ flex-direction: column; width: 100%; }
   .final-cta-actions .btn{ width: 100%; text-align:center; }
 }
