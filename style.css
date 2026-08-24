@@ -219,6 +219,8 @@ p{ color: var(--ink-soft); }
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 8rem 3.5rem 6rem 3.5rem;
   color: var(--white);
 }
@@ -616,7 +618,7 @@ p{ color: var(--ink-soft); }
 }
 
 @media (max-width: 480px){
-  .hero-actions{ flex-direction: column; align-items: flex-start; width: 100%; }
+  .hero-actions{ flex-direction: column; align-items: center; width: 100%; }
   .hero-actions .btn-primary{ width:100%; text-align:center; }
   .woc-sticker{ width: 78px; height: 78px; font-size: .72rem; left: -.8rem; }
   .message-board{ height: 560px; }
