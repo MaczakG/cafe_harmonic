@@ -10,8 +10,12 @@ onScroll();
 // Mobile menu toggle
 const burger = document.getElementById('burger');
 const navLinks = document.getElementById('navLinks');
+const navClose = document.getElementById('navClose');
 burger.addEventListener('click', () => {
   navLinks.classList.toggle('open');
+});
+navClose.addEventListener('click', () => {
+  navLinks.classList.remove('open');
 });
 navLinks.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', () => navLinks.classList.remove('open'));
