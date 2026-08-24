@@ -31,7 +31,6 @@
       <a href="#gallery">Gallery</a>
       <a href="#contact">Visit</a>
     </nav>
-    <a href="#contact" class="btn btn-small">Get Directions</a>
     <button class="burger" id="burger" aria-label="Menü">
       <span></span><span></span><span></span>
     </button>
@@ -40,34 +39,39 @@
 
 <!-- 1. HERO -->
 <section class="hero" id="top">
-  <div class="hero-slides">
-    <div class="hero-slide"><img src="képek/pexels-coffee-shop-interior-6612572.jpg" alt="Cafe Harmonic belső tere" loading="eager"></div>
-    <div class="hero-slide"><img src="képek/pexels-gulkiz-tuzen-dagdas-273405070-38065463.jpg" alt="Kávé Budapesten"></div>
-    <div class="hero-slide"><img src="képek/pexels-tugba-587672959-17574129.jpg" alt="Kávé napkeltekor"></div>
-  </div>
-  <div class="hero-overlay"></div>
-
-  <a href="#writeoncup" class="cup-badge">
-    <span class="cup-badge-inner">
-      <span>Leave a little</span>
-      <strong>positivity</strong>
-      <span class="cup-badge-sub">WriteOnCup</span>
-    </span>
-  </a>
-
-  <div class="hero-content">
+  <div class="hero-panel">
     <span class="hero-kicker" data-reveal>Specialty Coffee · Budapest</span>
-    <h1 data-reveal>GOOD COFFEE.<br>GOOD THOUGHTS.</h1>
-    <p class="tagline" data-reveal><strong>A cozy coffee spot to slow down, sip well, and feel good.</strong><br>Egy hangulatos hely, ahol lelassulhatsz, jót kortyolhatsz, és jól érezheted magad.</p>
+    <h1 data-reveal>We offer great<br>coffee &amp; good vibes.</h1>
+    <p class="tagline" data-reveal>
+      <strong>Cafe Harmonic</strong> — specialty coffee, fresh bakes and the WriteOnCup experience, in the heart of Budapest.<br>
+      <span class="hu">Cafe Harmonic — specialty kávé, friss péksütemény és a WriteOnCup élmény, Budapest szívében.</span>
+    </p>
     <div class="hero-actions" data-reveal>
-      <a href="#menu" class="btn btn-primary">View Menu</a>
+      <a href="#menu" class="btn btn-primary">View Menu →</a>
       <a href="#contact" class="btn btn-link-light">Find Us</a>
     </div>
   </div>
 
-  <a href="#about" class="scroll-cue" aria-label="Görgetés lejjebb">
-    <svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 1l7 7 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </a>
+  <div class="hero-media">
+    <div class="hero-slides">
+      <div class="hero-slide"><img src="képek/pexels-coffee-shop-interior-6612572.jpg" alt="Cafe Harmonic belső tere" loading="eager"></div>
+      <div class="hero-slide"><img src="képek/pexels-gulkiz-tuzen-dagdas-273405070-38065463.jpg" alt="Kávé Budapesten"></div>
+      <div class="hero-slide"><img src="képek/pexels-tugba-587672959-17574129.jpg" alt="Kávé napkeltekor"></div>
+    </div>
+    <div class="hero-media-overlay"></div>
+
+    <a href="#writeoncup" class="cup-badge">
+      <span class="cup-badge-inner">
+        <span>Leave a little</span>
+        <strong>positivity</strong>
+        <span class="cup-badge-sub">WriteOnCup</span>
+      </span>
+    </a>
+
+    <a href="#about" class="scroll-cue" aria-label="Görgetés lejjebb">
+      <svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 1l7 7 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
 </section>
 
 <!-- 2. ABOUT -->
@@ -106,8 +110,8 @@
       <p class="menu-note" data-reveal>Prices are indicative. / Az árak tájékoztató jellegűek.</p>
     </div>
     <div class="coffee-media" data-reveal>
-      <img src="képek/pexels-latte-art-2226091.jpg" alt="Cappuccino szív alakú latte arttal">
-      <img class="coffee-media-inset" src="képek/pexels-croissant-coffee-32413997.jpg" alt="Friss croissant kávéval">
+      <img class="coffee-media-a" src="képek/pexels-latte-art-2226091.jpg" alt="Cappuccino szív alakú latte arttal">
+      <img class="coffee-media-b" src="képek/pexels-barista-portafilter-9052268.jpg" alt="Barista részlet">
       <blockquote class="floating-quote">
         <p>“Good coffee is a little joy you can hold in your hands.”</p>
         <cite>A jó kávé egy apró öröm, amit a kezedben tarthatsz.</cite>
@@ -118,29 +122,30 @@
 
 <!-- 4. MORE THAN COFFEE -->
 <section class="food" id="food">
-  <span class="eyebrow eyebrow-dark center" data-reveal>More Than Coffee <span class="eyebrow-hu">/ Nem csak kávé</span></span>
-  <h2 class="center" data-reveal>Coffee + something good.</h2>
-  <p class="hu center" data-reveal>Kávé és még valami jó.</p>
+  <div class="food-head">
+    <h2 data-reveal>Coffee +<br>something good.</h2>
+    <p class="hu" data-reveal>Kávé és még valami jó.</p>
+    <div class="food-head-copy">
+      <p class="bi" data-reveal>
+        <strong>Fresh croissants, pastries and cakes, baked every morning to go with your coffee.</strong><br>
+        <span class="hu">Friss croissant, sütemény és torta, minden reggel frissen sütve a kávéd mellé.</span>
+      </p>
+      <p class="bi" data-reveal>
+        <strong>Everything is made with care, so it always feels like a little extra treat.</strong><br>
+        <span class="hu">Minden gondosan készül, hogy mindig egy kis plusz élmény legyen.</span>
+      </p>
+    </div>
+  </div>
   <div class="food-grid">
     <div class="food-card" data-reveal>
-      <span class="food-icon">☕</span>
-      <strong>Cappuccino</strong>
-      <span class="hu">Cappuccino</span>
+      <img src="képek/pexels-croissant-coffee-32413997.jpg" alt="Friss croissant kávéval">
+    </div>
+    <div class="food-card food-card-dark" data-reveal>
+      <span>Cappuccino<br><span class="hu">friss tejhabbal.</span></span>
+      <span class="food-card-arrow">→</span>
     </div>
     <div class="food-card" data-reveal>
-      <span class="food-icon">🥐</span>
-      <strong>Croissant</strong>
-      <span class="hu">Croissant</span>
-    </div>
-    <div class="food-card" data-reveal>
-      <span class="food-icon">🍰</span>
-      <strong>Cake</strong>
-      <span class="hu">Sütemény</span>
-    </div>
-    <div class="food-card" data-reveal>
-      <span class="food-icon">🥪</span>
-      <strong>Snack</strong>
-      <span class="hu">Harapnivaló</span>
+      <img src="képek/pexels-latte-art-2226091.jpg" alt="Cappuccino latte arttal">
     </div>
   </div>
 </section>
