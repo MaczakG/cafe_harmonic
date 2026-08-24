@@ -462,11 +462,22 @@ p{ color: var(--ink-soft); }
   color: var(--ink-soft);
   opacity: .8;
 }
-.menu-media img{
+.menu-media{ position: relative; }
+.menu-media > img:first-child{
   width: 100%;
   aspect-ratio: 4/5;
   object-fit: cover;
   border-radius: var(--radius);
+}
+.menu-media-inset{
+  position: absolute;
+  bottom: -1.4rem; left: -1.4rem;
+  width: 42%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 4px solid var(--white);
+  box-shadow: 0 14px 30px rgba(44,33,26,.25);
 }
 
 /* ================= CONTACT ================= */
