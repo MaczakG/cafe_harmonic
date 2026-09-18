@@ -21,6 +21,25 @@ navLinks.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', () => navLinks.classList.remove('open'));
 });
 
+// Language switch (HU default, EN toggle)
+const langButtons = document.querySelectorAll('.lang-btn');
+const huEls = document.querySelectorAll('.t-hu');
+const enEls = document.querySelectorAll('.t-en');
+function setLang(lang){
+  const isEn = lang === 'en';
+  huEls.forEach(el => { el.hidden = isEn; });
+  enEls.forEach(el => { el.hidden = !isEn; });
+  langButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
+  document.documentElement.lang = lang;
+  try { localStorage.setItem('cafeHarmonicLang', lang); } catch (e) {}
+}
+langButtons.forEach(btn => {
+  btn.addEventListener('click', () => setLang(btn.dataset.lang));
+});
+let savedLang = 'hu';
+try { savedLang = localStorage.getItem('cafeHarmonicLang') || 'hu'; } catch (e) {}
+setLang(savedLang);
+
 // Reveal on scroll
 const revealEls = document.querySelectorAll('[data-reveal]');
 const io = new IntersectionObserver((entries) => {

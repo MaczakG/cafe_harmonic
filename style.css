@@ -44,17 +44,7 @@ h1,h2{
 a{ color: inherit; text-decoration:none; }
 p{ color: var(--ink-soft); }
 
-.hu{
-  font-weight: 400;
-  color: var(--ink-soft);
-  font-size: .95em;
-}
-.bi strong{
-  font-weight: 700;
-  color: var(--ink);
-  display:inline;
-}
-.bi .hu{ display:inline-block; margin-top:.35rem; }
+[hidden]{ display:none !important; }
 
 .eyebrow{
   display:inline-block;
@@ -67,14 +57,31 @@ p{ color: var(--ink-soft); }
   margin-bottom: 1.1rem;
 }
 .eyebrow-dark{ color: var(--coffee); }
-.eyebrow-hu{
-  text-transform: none;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: var(--ink-soft);
-  font-size: .85em;
-}
 .center{ display:block; text-align:center; margin-left:auto; margin-right:auto; }
+
+/* ---------- language switch ---------- */
+.lang-switch{
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  font-family: var(--display);
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+}
+.lang-btn{
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: .2rem .1rem;
+  color: rgba(255,255,255,.55);
+  transition: color .25s ease;
+}
+.nav.scrolled .lang-btn{ color: var(--ink-soft); }
+.lang-btn.active{ color: var(--white); }
+.nav.scrolled .lang-btn.active{ color: var(--espresso); }
+.lang-sep{ color: rgba(255,255,255,.35); font-size: .75rem; }
+.nav.scrolled .lang-sep{ color: rgba(36,26,18,.3); }
 
 /* ---------- buttons ---------- */
 .btn{
@@ -185,6 +192,7 @@ p{ color: var(--ink-soft); }
 .nav.scrolled .nav-brand .logo-dark{ opacity: 1; }
 
 .nav-links{ display: flex; gap: 2rem; margin-left: auto; font-size: .88rem; font-weight: 500; }
+.lang-switch{ margin-left: auto; }
 .nav-links a{
   position: relative;
   color: var(--white);
@@ -262,18 +270,13 @@ p{ color: var(--ink-soft); }
 
 .cup-badge{
   position: absolute; bottom: 3.5rem; right: 2.2rem; z-index: 3;
-  width: 108px; height: 108px; border-radius: 50%;
-  background: var(--white);
-  border: 2px dashed var(--coffee);
-  display:flex; align-items:center; justify-content:center;
+  width: 150px;
   transform: rotate(8deg);
-  box-shadow: 0 12px 26px rgba(0,0,0,.25);
+  filter: drop-shadow(0 12px 22px rgba(0,0,0,.35));
   transition: transform .3s ease;
 }
 .cup-badge:hover{ transform: rotate(0deg) scale(1.05); }
-.cup-badge-inner{ display:flex; flex-direction: column; align-items:center; text-align:center; color: var(--coffee-dark); font-size: .68rem; line-height: 1.25; text-transform: uppercase; letter-spacing: .04em; }
-.cup-badge-inner strong{ font-size: .82rem; font-weight: 700; }
-.cup-badge-sub{ margin-top: .3rem; font-size: .58rem; color: var(--coffee); letter-spacing: .08em; }
+.cup-badge img{ width: 100%; height: auto; display: block; }
 
 /* ================= 2. ABOUT ================= */
 .about{
@@ -357,7 +360,8 @@ p{ color: var(--ink-soft); }
   aspect-ratio: 3/4;
 }
 .food-card-dark span:first-child{ font-family: var(--serif); font-size: 1.3rem; font-weight: 600; color: var(--white); line-height: 1.3; }
-.food-card-dark .hu{ font-family: var(--display); font-size: .82rem; color: rgba(247,241,230,.55); }
+.food-card-dark span:first-child .t-hu,
+.food-card-dark span:first-child .t-en{ display:block; margin-top:.35rem; font-family: var(--display); font-size: .82rem; font-weight: 400; color: rgba(247,241,230,.55); }
 .food-card-arrow{
   width: 40px; height: 40px; border-radius: 50%;
   background: rgba(247,241,230,.12);
@@ -379,23 +383,15 @@ p{ color: var(--ink-soft); }
   align-items: center;
 }
 .woc-media{ position: relative; }
-.woc-media img{ width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: var(--radius); }
+.woc-media img:not(.woc-sticker){ width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: var(--radius); }
 .woc-sticker{
-  position: absolute; bottom: 1.4rem; left: -1.2rem;
-  background: var(--white);
-  border: 2px dashed var(--coffee);
-  border-radius: 50%;
-  width: 96px; height: 96px;
-  display:flex; align-items:center; justify-content:center;
-  text-align:center;
-  font-weight: 700; font-size: .82rem; color: var(--coffee-dark);
+  position: absolute; bottom: 1.4rem; left: -1.8rem;
+  width: 140px; height: auto;
   transform: rotate(-7deg);
-  box-shadow: 0 10px 22px rgba(0,0,0,.16);
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,.25));
 }
-.woc-placeholder-note{ margin-top: .9rem; font-size: .76rem; font-style: italic; color: var(--ink-soft); opacity: .75; }
-.woc-text h2{ font-size: clamp(1.8rem, 3.4vw, 2.5rem); margin-bottom: .6rem; }
-.woc-text > p.hu{ margin-bottom: 1.4rem; font-size: 1.05rem; }
-.woc-text .bi{ max-width: 44ch; }
+.woc-text h2{ font-size: clamp(1.8rem, 3.4vw, 2.5rem); margin-bottom: 1rem; }
+.woc-text .bi{ max-width: 44ch; margin-bottom: .4rem; }
 
 /* ================= 6. WRITE A MESSAGE ================= */
 .message{ max-width: var(--container); margin: 0 auto; padding: 6.5rem 1.6rem 4rem; text-align:center; }
@@ -464,8 +460,7 @@ p{ color: var(--ink-soft); }
 .budapest-content{ position:relative; z-index:2; max-width: var(--container); margin:0 auto; padding: 5rem 1.6rem; color: var(--white); }
 .budapest-content h2{ color: var(--white); font-size: clamp(1.9rem, 4vw, 2.8rem); margin-bottom: .6rem; }
 .budapest-content > p.hu{ color: rgba(247,241,230,.65); margin-bottom: 1.4rem; }
-.budapest-content .bi{ max-width: 50ch; }
-.budapest-content .bi strong{ color: var(--white); }
+.budapest-content .bi{ max-width: 50ch; color: rgba(247,241,230,.7); }
 .budapest-content .bi .hu{ color: rgba(247,241,230,.65); }
 
 /* ================= 9. VISIT US ================= */
@@ -603,9 +598,7 @@ p{ color: var(--ink-soft); }
     flex-direction: column;
     align-items: flex-start;
   }
-  .cup-badge{ width: 84px; height: 84px; bottom: 1.6rem; right: 1.2rem; }
-  .cup-badge-inner{ font-size: .58rem; }
-  .cup-badge-inner strong{ font-size: .68rem; }
+  .cup-badge{ width: 110px; bottom: 1.6rem; right: 1.2rem; }
   .gallery-grid{ grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
   .g-large{ grid-column: 1/3; grid-row: 1/2; }
   .g-a{ grid-column: 1/2; grid-row: 2/3; }
@@ -621,7 +614,7 @@ p{ color: var(--ink-soft); }
 @media (max-width: 480px){
   .hero-actions{ flex-direction: column; align-items: center; width: 100%; }
   .hero-actions .btn-primary{ width:100%; text-align:center; }
-  .woc-sticker{ width: 78px; height: 78px; font-size: .72rem; left: -.8rem; }
+  .woc-sticker{ width: 100px; left: -1rem; }
   .message-board{ height: 400px; max-width: 380px; }
   .message-cup{ width: 130px; height: 130px; }
   .note{ font-size: 1.1rem; padding: .55rem .9rem; }
