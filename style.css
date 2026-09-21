@@ -311,7 +311,7 @@ p{ color: var(--ink-soft); }
 .menu-row{ display:flex; align-items: center; justify-content: space-between; padding: .95rem 0; border-bottom: 1px solid rgba(247,241,230,.14); }
 .m-name{ font-family: var(--serif); font-weight: 700; font-size: 1.1rem; color: var(--cream); }
 .m-price{ font-weight: 600; color: var(--coffee-light); font-size: .98rem; }
-.menu-note{ margin-top: 1.4rem; font-size: .78rem; color: rgba(247,241,230,.5); }
+.menu-note{ margin-top: 1.6rem; padding-left: 1rem; border-left: 2px solid var(--coffee-light); font-size: .9rem; line-height: 1.5; color: rgba(247,241,230,.82); }
 
 .coffee-media{ position: relative; display: flex; align-items: flex-end; gap: 1.1rem; }
 .coffee-media-a{ width: 62%; aspect-ratio: 4/5; object-fit: cover; border-radius: var(--radius); }
