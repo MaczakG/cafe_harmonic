@@ -1,6 +1,5 @@
 # Ezek a fájlok/mappák NEM kerülnek fel a cafeharmonic.hu-ra (wrangler deploy).
 .git
-.github
 .claude
 .wrangler
 node_modules
