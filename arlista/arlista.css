@@ -1,0 +1,72 @@
+  :root{
+    --espresso:#1f150e; --espresso-2:#2b1e14;
+    --coffee:#96714f; --coffee-light:#b8956d;
+    --cream:#f7f1e6; --cream-2:#efe2cc;
+  }
+  @page{ size: 1240px 1754px; margin: 0; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ width:1240px; height:1754px; background:var(--espresso); }
+  body{
+    font-family:"Poppins","Segoe UI",sans-serif; font-weight:300; color:var(--cream);
+    -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  .sheet{
+    position:relative; width:1240px; height:1754px; overflow:hidden;
+    padding:84px 120px 76px;
+    display:flex; flex-direction:column; align-items:center;
+    background:
+      radial-gradient(900px 500px at 50% -80px, rgba(184,149,109,.16), transparent 70%),
+      var(--espresso);
+  }
+  .frame{
+    position:absolute; inset:36px; border:1.5px solid rgba(184,149,109,.45); border-radius:6px; pointer-events:none;
+  }
+  .frame::after{
+    content:""; position:absolute; inset:10px; border:1px solid rgba(184,149,109,.2); border-radius:3px;
+  }
+  .logo{ width:210px; height:auto; display:block; }
+  .eyebrow{
+    margin-top:34px; font-size:19px; font-weight:500; letter-spacing:.42em; text-transform:uppercase;
+    color:var(--coffee-light); padding-left:.42em;
+  }
+  h1{
+    margin-top:10px; font-family:"Playfair Display",Georgia,serif; font-weight:700;
+    font-size:78px; line-height:1.05; color:var(--cream); letter-spacing:.01em; text-align:center;
+  }
+  h1 em{ font-style:italic; font-weight:500; color:var(--coffee-light); }
+  .orn{ margin:22px 0 8px; display:flex; align-items:center; gap:18px; color:var(--coffee-light); }
+  .orn i{ display:block; width:120px; height:1px; background:rgba(184,149,109,.6); }
+  .orn b{ font-size:16px; font-weight:400; }
+
+  .list{ width:100%; margin-top:14px; }
+  .row{
+    display:flex; align-items:baseline; gap:20px;
+    padding:11px 0; border-bottom:1px solid rgba(247,241,230,.12);
+  }
+  .row:first-child{ border-top:1px solid rgba(247,241,230,.12); }
+  .name{
+    font-family:"Playfair Display",Georgia,serif; font-weight:600; font-size:34px; line-height:1.1; color:var(--cream);
+  }
+  .dots{ flex:1; border-bottom:2px dotted rgba(184,149,109,.4); transform:translateY(-8px); min-width:40px; }
+  .price{ font-weight:500; font-size:30px; color:var(--coffee-light); letter-spacing:.01em; white-space:nowrap; }
+  .price small{ font-size:20px; font-weight:400; margin-left:6px; color:rgba(184,149,109,.85); letter-spacing:.06em; }
+
+  .note{
+    margin-top:30px; text-align:center; padding:20px 40px; width:100%;
+    background:rgba(247,241,230,.06); border:1px solid rgba(184,149,109,.35); border-radius:14px;
+  }
+  .note .hu{ font-family:"Playfair Display",Georgia,serif; font-style:italic; font-size:29px; color:var(--cream); font-weight:500; }
+  .note .en{ margin-top:8px; font-size:19px; color:rgba(247,241,230,.7); letter-spacing:.02em; }
+
+  .foot{
+    margin-top:auto; width:100%; text-align:center; font-size:20px; letter-spacing:.06em;
+    color:rgba(247,241,230,.72);
+  }
+  .foot strong{ display:block; font-weight:500; color:var(--coffee-light); letter-spacing:.3em; text-transform:uppercase; font-size:17px; margin-bottom:10px; }
+  .foot span{ display:block; margin-top:6px; }
+
+  .sub{ margin-top:6px; font-family:"Playfair Display",Georgia,serif; font-style:italic; font-weight:500; font-size:40px; color:var(--coffee-light); letter-spacing:.02em; }
+  .single .row{ padding:13px 0; }
+  .single .note{ margin-top:30px; padding:20px 30px; }
+
+  .single .note .only{ font-family:"Playfair Display",Georgia,serif; font-style:italic; font-size:28px; color:var(--cream); font-weight:500; }
