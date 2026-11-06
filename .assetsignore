@@ -1,0 +1,9 @@
+# Ezek a fájlok/mappák NEM kerülnek fel a cafeharmonic.hu-ra (wrangler deploy).
+.git
+.claude
+.wrangler
+node_modules
+.assetsignore
+wrangler.jsonc
+# Az árlista nyomdai anyag (PNG/PDF + generátor), a weboldal nem hivatkozik rá.
+arlista
