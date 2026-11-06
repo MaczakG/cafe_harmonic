@@ -1,0 +1,21 @@
+// Cloudflare Worker beállítás: a cafeharmonic.hu statikus weboldala.
+// A GitHub Actions (.github/workflows/deploy.yml) minden main ágra kerülő
+// változás után ezzel telepít. Kézi telepítés: npx wrangler deploy
+// Hogy mi NEM kerül fel az oldalra, azt a .assetsignore fájl sorolja fel.
+{
+  "name": "cafe-harmonic",
+  "account_id": "eb98aca6fd8d5eaad555755e9fb5a848",
+  "compatibility_date": "2026-11-02",
+  "assets": {
+    "directory": "."
+  },
+  "routes": [
+    { "pattern": "cafeharmonic.hu", "custom_domain": true },
+    { "pattern": "www.cafeharmonic.hu", "custom_domain": true }
+  ],
+  "workers_dev": true,
+  "preview_urls": true,
+  "observability": {
+    "enabled": true
+  }
+}
