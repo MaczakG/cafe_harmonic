@@ -7,3 +7,5 @@ node_modules
 wrangler.jsonc
 # Az árlista nyomdai anyag (PNG/PDF + generátor), a weboldal nem hivatkozik rá.
 arlista
+# A szórólap nyomdai anyag (HTML/PDF/PNG + generátor), nem a weboldal része.
+szorolap

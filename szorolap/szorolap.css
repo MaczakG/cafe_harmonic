@@ -1,0 +1,144 @@
+/* Café Harmonic – A5 szórólap (148 × 210 mm + 3 mm kifutó = 154 × 216 mm) */
+@font-face{ font-family:"Poppins"; font-weight:300; src:url(fonts/poppins-latin-ext-300-normal.woff2) format("woff2"); unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face{ font-family:"Poppins"; font-weight:300; src:url(fonts/poppins-latin-300-normal.woff2) format("woff2"); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face{ font-family:"Poppins"; font-weight:400; src:url(fonts/poppins-latin-ext-400-normal.woff2) format("woff2"); unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face{ font-family:"Poppins"; font-weight:400; src:url(fonts/poppins-latin-400-normal.woff2) format("woff2"); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face{ font-family:"Poppins"; font-weight:500; src:url(fonts/poppins-latin-ext-500-normal.woff2) format("woff2"); unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face{ font-family:"Poppins"; font-weight:500; src:url(fonts/poppins-latin-500-normal.woff2) format("woff2"); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face{ font-family:"Poppins"; font-weight:600; src:url(fonts/poppins-latin-ext-600-normal.woff2) format("woff2"); unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face{ font-family:"Poppins"; font-weight:600; src:url(fonts/poppins-latin-600-normal.woff2) format("woff2"); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face{ font-family:"Playfair Display"; font-weight:600; src:url(fonts/playfair-display-latin-ext-600-normal.woff2) format("woff2"); unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face{ font-family:"Playfair Display"; font-weight:600; src:url(fonts/playfair-display-latin-600-normal.woff2) format("woff2"); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face{ font-family:"Playfair Display"; font-weight:700; src:url(fonts/playfair-display-latin-ext-700-normal.woff2) format("woff2"); unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face{ font-family:"Playfair Display"; font-weight:700; src:url(fonts/playfair-display-latin-700-normal.woff2) format("woff2"); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face{ font-family:"Playfair Display"; font-style:italic; font-weight:500; src:url(fonts/playfair-display-latin-ext-500-italic.woff2) format("woff2"); unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face{ font-family:"Playfair Display"; font-style:italic; font-weight:500; src:url(fonts/playfair-display-latin-500-italic.woff2) format("woff2"); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+
+:root{
+  --espresso:#1f150e; --espresso-2:#2b1e14;
+  --coffee:#96714f; --coffee-light:#b8956d;
+  --cream:#f7f1e6; --cream-2:#efe2cc;
+  --bleed:3mm;
+}
+@page{ size:154mm 216mm; margin:0; }
+*{ box-sizing:border-box; margin:0; padding:0; }
+html,body{ background:var(--espresso); }
+body{
+  font-family:"Poppins",sans-serif; font-weight:300; color:var(--cream);
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+}
+svg{ display:block; }
+
+/* ---- one side ------------------------------------------------------- */
+.page{
+  position:relative; width:154mm; height:216mm; overflow:hidden;
+  break-after:page; page-break-after:always;
+  background:var(--espresso);
+}
+.page:last-child{ break-after:auto; page-break-after:auto; }
+
+/* photo: full bleed at the top, fading into espresso */
+.photo{
+  position:absolute; left:0; top:0; width:154mm; height:121mm;
+  background:url("../képek/harmonic-espresso-csorog.jpg") 46% 58% / cover no-repeat;
+}
+.photo::before{ /* top shade for the logo */
+  content:""; position:absolute; inset:0 0 auto 0; height:58mm;
+  background:linear-gradient(to bottom, rgba(31,21,14,.78), rgba(31,21,14,.35) 55%, rgba(31,21,14,0));
+}
+.photo::after{ /* bottom fade into the page */
+  content:""; position:absolute; inset:auto 0 0 0; height:50mm;
+  background:linear-gradient(to bottom, rgba(31,21,14,0), rgba(31,21,14,.72) 52%, var(--espresso));
+}
+
+/* thin double frame, 5 mm inside the trim */
+.frame{
+  position:absolute; inset:calc(var(--bleed) + 5mm); border:.3mm solid rgba(184,149,109,.55); border-radius:1.6mm;
+  pointer-events:none;
+}
+.frame::after{ content:""; position:absolute; inset:1.1mm; border:.18mm solid rgba(184,149,109,.28); border-radius:.9mm; }
+
+.content{
+  position:absolute; inset:var(--bleed); padding:11mm 12mm 0;
+  display:flex; flex-direction:column; align-items:center; text-align:center;
+}
+
+.logo{ width:33mm; height:33mm; margin-top:-2mm; }
+.eyebrow{
+  margin-top:auto; margin-bottom:2.2mm; font-size:6.6pt; font-weight:500; letter-spacing:.42em; padding-left:.42em;
+  text-transform:uppercase; color:var(--cream-2);
+}
+
+.tagline{
+  font-family:"Playfair Display",serif; font-weight:700; font-size:23pt; line-height:1.08; letter-spacing:.005em;
+  color:var(--cream);
+}
+.tagline em{ font-style:italic; font-weight:500; color:var(--coffee-light); }
+.hero{ height:101.5mm; display:flex; flex-direction:column; align-items:center; width:100%; }
+
+/* ---- the voucher (a ticket with notches and a perforation) --------- */
+.voucher{
+  position:relative; width:118mm; height:33mm; margin-top:6.2mm;
+  display:flex; color:var(--espresso);
+  background:var(--cream-2);
+  border-radius:2mm;
+}
+.voucher .notch{ /* ticket notches: page-coloured discs over the edges */
+  position:absolute; top:50%; width:6.8mm; height:6.8mm; margin-top:-3.4mm; border-radius:50%; background:var(--espresso); z-index:1;
+}
+.voucher .notch.l{ left:-3.4mm; } .voucher .notch.r{ right:-3.4mm; }
+.voucher::before{ /* inner hairline */
+  content:""; position:absolute; inset:1.4mm; border:.2mm solid rgba(150,113,79,.55); border-radius:1.2mm; pointer-events:none;
+}
+.stub{
+  width:41mm; flex:none; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  border-right:.35mm dashed rgba(150,113,79,.75); margin:3.6mm 0;
+}
+.pct{ font-family:"Playfair Display",serif; font-weight:700; font-size:44pt; line-height:.9; color:var(--espresso); letter-spacing:-.01em; font-variant-numeric:lining-nums; font-feature-settings:"lnum" 1; }
+.pct small{ font-size:.46em; vertical-align:.8em; margin-left:.8mm; }
+.off{ margin-top:1.2mm; font-size:7.4pt; font-weight:600; letter-spacing:.32em; padding-left:.32em; text-transform:uppercase; color:var(--coffee); }
+
+.body{ flex:1; padding:4mm 6mm 0 5.6mm; text-align:left; display:flex; flex-direction:column; }
+.show{ font-family:"Playfair Display",serif; font-style:italic; font-weight:500; font-size:12.6pt; line-height:1.15; color:var(--espresso); }
+.pass{ margin-top:2.6mm; font-size:6.4pt; line-height:1.35; color:#5b4330; font-weight:400; }
+.pass b{ font-weight:600; color:var(--coffee); letter-spacing:.04em; }
+.note-line{ margin-top:2.2mm; display:flex; align-items:flex-end; gap:1.6mm; font-size:6.2pt; font-weight:500; color:var(--coffee); }
+.note-line i{ flex:1; height:0; border-bottom:.3mm dotted rgba(91,67,48,.7); transform:translateY(-.5mm); }
+
+/* ---- address + hours ------------------------------------------------ */
+.info{
+  margin-top:5.8mm; display:flex; justify-content:center; gap:7mm; font-size:7.6pt; font-weight:400; color:rgba(247,241,230,.88);
+}
+.info span{ display:inline-flex; align-items:center; gap:1.5mm; white-space:nowrap; }
+.info svg{ width:3.4mm; height:3.4mm; color:var(--coffee-light); flex:none; }
+
+/* ---- social: QR | website | QR ------------------------------------- */
+.social{ margin-top:5.6mm; width:118mm; display:flex; align-items:center; justify-content:space-between; }
+.qr{ width:30mm; display:flex; flex-direction:column; align-items:center; }
+.qr .tile{ width:23mm; height:23mm; padding:2.1mm; background:var(--cream); border-radius:1.8mm; }
+.qr .tile svg{ width:100%; height:100%; }
+.qr .label{ margin-top:1.5mm; display:flex; align-items:center; gap:1.2mm; font-size:7pt; font-weight:500; color:var(--cream); letter-spacing:.03em; }
+.qr .label svg{ width:3.6mm; height:3.6mm; color:var(--coffee-light); }
+.qr .handle{ margin-top:.5mm; font-size:5.6pt; color:rgba(247,241,230,.62); letter-spacing:.02em; }
+
+.web{ flex:1; display:flex; flex-direction:column; align-items:center; padding:0 2mm; }
+.web .follow{ font-family:"Playfair Display",serif; font-style:italic; font-weight:500; font-size:11pt; color:var(--coffee-light); }
+.web .orn{ margin:2mm 0 2.2mm; display:flex; align-items:center; gap:1.8mm; }
+.web .orn b{ width:1.3mm; height:1.3mm; background:var(--coffee-light); transform:rotate(45deg); }
+.web .orn i{ display:block; width:9mm; height:.2mm; background:rgba(184,149,109,.6); }
+.web .url{ font-size:10.2pt; font-weight:500; letter-spacing:.06em; color:var(--cream); }
+.web .scan{ margin-top:1.6mm; font-size:5.8pt; color:rgba(247,241,230,.62); letter-spacing:.02em; line-height:1.4; }
+
+/* ---- print sheet with crop marks (szorolap-vagojelekkel.html) ------- */
+html:has(body.marks), body.marks{ background:#fff; }
+.marks{ --m:10mm; }
+.marks .sheet{
+  position:relative; width:174mm; height:236mm; background:#fff;
+  break-after:page; page-break-after:always;
+}
+.marks .sheet:last-child{ break-after:auto; page-break-after:auto; }
+.marks .sheet .page{ position:absolute; left:var(--m); top:var(--m); break-after:auto; page-break-after:auto; }
+.marks .cm{ position:absolute; background:#000; }
+.marks .cm.h{ height:.25mm; width:calc(var(--m) - 1.5mm); }
+.marks .cm.v{ width:.25mm; height:calc(var(--m) - 1.5mm); }
+.marks .lbl{ position:absolute; left:var(--m); bottom:2.5mm; font:5pt/1 "Poppins",sans-serif; color:#000; }
